@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+
+.site_header {
+    background-color: black;
+    color: white;
+}
+.site_header h1 {
+    padding: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+
+/* main */
+#products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    margin: 4rem auto;
+}
+form{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.delete_now{
+    background-color: red;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-weight: bold;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+    font-size: 22px;
+    margin-right: 0.5rem;
+}
+
+
+
+.product{
+    border: 1px solid lightgrey;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    position: relative;
+    text-align: center;
+}
+.product:hover{
+    transform: scale(1.1);
+}
+
+.product:hover  .price_product{
+    background-color: greenyellow;
+    font-weight: bold;
+}
+.product .price_product{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.product > img {
+    width: 300px;
+    height: 240px;
+    object-fit: cover;
+    border-bottom: 1px solid #ededed;
+}
+.product p{
+    margin-top:1rem ;
+    padding: 0.5rem 0;
+}
+
+.buy_now{
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.buy_now:hover{
+    text-transform: uppercase;
+    font-weight: bold;
+    transform: scale(1.05);
+    color: black;
+    background-color: greenyellow;
+}
+
+.cart_wrapper{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    z-index: 1;
+    opacity: 0;
+    position: fixed;
+}
+.cart_wrapper i{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.elemento_carello{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.elemento_carello span:nth-of-type(2){
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+.totale_carello{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.totale_carello .total{
+    font-size: 1.5rem;
+    font-weight: 900;
+
+}
+/* footer */
